@@ -1,0 +1,66 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "globals": {
+        "__DEV__": false,
+        "dlconsole": true,
+        "EventBus": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:flowtype/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+        "react",
+        "react-native",
+        "flowtype"
+    ],
+    "rules": {
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "indent": ["error", 4],
+        "no-multi-spaces" : "error",
+        "no-unused-vars": "off",
+        "react/jsx-no-target-blank" : "off",
+        "react/no-deprecated": "off",
+        "react/prop-types": "off",
+        "no-console": "off",
+        "react/jsx-closing-bracket-location" : "error",
+        "jsx-quotes" : ["error", "prefer-single"],
+        "react/jsx-tag-spacing" : ["error", {
+            "beforeClosing": "never"
+        }],
+        "react/jsx-curly-spacing" : "error",
+        "react/jsx-wrap-multilines" : "error",
+        "react/self-closing-comp" : "error",
+        "react-native/no-unused-styles": "error",
+        "react/jsx-no-bind": ["error", {"allowArrowFunctions": true}]
+    },
+    "settings": {
+        "react": {
+            "version": "require('./package.json').dependencies.react"
+        }
+    }
+}
